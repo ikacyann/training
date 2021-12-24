@@ -1,0 +1,13 @@
+<div class="container">
+  <% @users.each do |user| %>
+  <div class="user-index-frame">
+    <%= link_to("/users/#{user.id}") do %>
+      <img src=" <%= "/user_images/#{user.image_name}" %>">
+      <h4><%= user.name %></h4>
+    <% end %>
+    
+    
+    <p><%= user.pinned_tweet %></p>
+  </div>
+  <% end %> 
+</div>

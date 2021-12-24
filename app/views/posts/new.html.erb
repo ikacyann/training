@@ -1,0 +1,13 @@
+<div class=" container ">
+  <div class="post-frame">
+    <P class="post-heading">What,s happening?</P>
+    <img src=" <%= "/user_images/#{@current_user.id}.jpg" %>">
+    <%= form_tag("/posts/create") do %>
+    <textarea name="content" class="post-form"></textarea>
+
+    <input class="post-btn" value="Tweet" type="submit">
+    <% end %>
+    
+  </div>
+
+</div>

@@ -1,3 +1,18 @@
-<h1>Home#top</h1>
-<p>Find me in app/views/home/top.html.erb</p>
+<div class="container">
+  <div class="create-frame">
+    <div class="create-form">
+      <%= form_tag("/users/create") do %>
+      <h2>新規登録</h2>
+      <p>名前</p>
+      <input class="signup" name="name">
+      <p>メール</p>
+      <input class="signup" name="email">
+      <p>パスワード</p>
+      <input class="signup" name="password">
+      <input class="signup-btn" type="submit" value="signup">
+      <% end %>
+    </div>
+  </div>
+</div>
+
 

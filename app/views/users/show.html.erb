@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="user-show-frame">
+    <img class="user-background-image"src=" <%= "/background_images/#{@user.background_image}" %>">
+    <img class="user-show-image"src=" <%= "/user_images/#{@user.image_name}" %>">
+    <ul class="show-ul01">
+       <% if @user.id == @current_user.id %>
+      <li class="edit-btn"><%= link_to("Edit", "/users/#{@user.id}/edit") %></li>
+      <% end %>
+      <li class="follow">follow</li>
+      <li><img class="dm" src=" /icon_images/message.png"></li>
+   
+    </ul>
+    <ul class="show-ul">
+      <li><h2><%= @user.name %></h2></li>
+      <li class="show-li">
+          <% if @current_user %>
+              <%= "@#{@current_user.name}" %>
+              <% end %>
+          </li>
+      <li class="show-li">profile</li>
+      <li class="profile-p"><p><%= @user.profile %></p></li>
+       <li class="profile-a">
+       <a class="following-count">55</a><a class="following">follwing</a>
+       <a class="followers-count">55</a><a class="followers">Followers</a>
+       </li>
+    </ul>
+
+    <ul class="show-ul02">
+      <li>Tweets</li>
+      <li>Tweet & replies</li>
+      <li>Media</li>
+      <li>Likes</li>
+   </div>
+
+    <div class="pinned-tweet-frame">
+      <div class="pinned-tweet-heading" >
+        <img src=" <%="/user_images/#{@user.image_name}"%> ">
+        <p class="pinned">Pinned tweet</p>
+        <h3><%= @user.name %></h3>
+        <p class="pinnet-tweet01"><%= @user.pinned_tweet %></p>
+      </div>
+    </div>
+</div>

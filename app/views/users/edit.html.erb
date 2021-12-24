@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="user-edit-frame">
+    <div class="user-edit-form">
+      <%= form_tag("/users/#{@user.id}/update", {multipart: true}) do %>
+      <h2>編集</h2>
+      <p>名前</p>
+      <input class="edit-user" name="name" value="<%= @user.name %>">
+      <p>パスワード</p>
+      <input class="edit-user" name="password" value="<%= @user.password %>">
+      <p>Image</p>
+      <input class="edit-user" name="image" type="file">
+      <p>Background-image</p>
+      <input class="edit-user" name="background_image" type="file">
+      <p>profile</p>
+      <input name="profile" class="edit-user" value="<%= @user.profile %>">
+      <p>pinned tweet</p>
+      <textarea class="pinned-tweet" name="pinned_tweet"><%= @user.pinned_tweet %></textarea>
+      <input class="update-user-btn" type="submit" value="update">
+      <% end %>
+    </div>
+  </div>
+</div>

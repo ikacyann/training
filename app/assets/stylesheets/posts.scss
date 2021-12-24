@@ -1,0 +1,61 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.post-frame {
+    width: 600px;
+    height: 250px;
+    background: rgb(245, 245, 245);
+    position: absolute;
+    top: 50px;
+    border-radius: 10px;
+}
+
+.post-form {
+    background: rgb(245, 245, 245);
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    width: 500px;
+    height: 150px;
+    border: solid 1px rgb(245, 245, 245);
+    resize: none;
+    outline: none;
+    font-size: 17px;
+    letter-spacing: 5px;
+    
+}
+
+.post-heading {
+    font-size: 25px;
+    letter-spacing: 5px;
+    color:rgb(180, 175, 175);
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.post-btn {
+    position: absolute;
+    font-size: 25px;
+    bottom: 20px;
+    right:20px;
+    background: rgb(10, 195, 245);
+    color: white;
+    font-weight: 800;
+    padding: 10px, 30px;
+    border-radius: 30px;
+    opacity: 0.8;
+    border: none;
+}
+
+.post-btn:hover {
+    opacity: 1;
+    
+}
+
+
+.post-frame img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    float: left;
+}

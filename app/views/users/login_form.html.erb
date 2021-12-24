@@ -1,0 +1,28 @@
+
+  
+  
+
+
+<div class="container">
+
+<% if @error_message %>
+  <div class="error-message">
+  <%= @error_message %>
+  </div>
+  <% end %>
+  
+  <div class="login-frame">
+    <div class="login-form">
+      <%= form_tag("/login") do %>
+      <h2>ログイン</h2>
+      <p>名前</p>
+      <input class="login" name="name" value="<%= @name %>">
+
+      
+      <p>パスワード</p>
+      <input class="login" name="password" type="password" value="<%= @password %>">
+      <input class="login-btn" type="submit" value="Login">
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -18,3 +18,51 @@
     padding: 0;
     margin: 0;
   }
+
+  .container {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  header {
+    width: 600px;
+    min-height: 80px;
+    border: solid 1px rgb(222, 222, 222);
+    border-top: none;
+    margin: 0 auto;
+  }
+
+  header li {
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+  }
+
+  header a {
+    text-decoration: none;
+  }
+
+  header p {
+    font-weight: 700;
+    margin-bottom: 0px;
+    background: rgb(10, 195, 245);
+    padding-bottom: -5px;
+    border-radius: 20px;
+    color: white;
+  }
+
+  header img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .flash-message {
+    height:30px;
+    line-height: 30px;
+    background: rgb(10, 195, 245);
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: red;
+  }

@@ -1,0 +1,436 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+//show
+
+.user-show-frame {
+    position: relative;
+    border: solid 1px rgb(222, 222, 222);
+    border-top: none;
+
+    min-height: 400px;
+
+    
+}
+
+.show-ul {
+    position: absolute;
+    top: 170px;
+    left: 45px;
+}
+
+.show-li {
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 12px;
+    color:rgb(150, 150, 150);
+}
+
+
+
+.user-show-image {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top:30px;
+    left: 0px;
+    border-radius: 80px;
+    border: solid 4px white;
+    margin-left: 20px;
+}
+
+.user-background-image {
+    width: 100%;
+    height: 110px;
+    
+}
+
+.user-show-frame li {
+    list-style: none;
+
+}
+
+.dm {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid 1px rgb(190, 190, 190);
+
+    float: right;
+    
+    margin-right: 15px;
+    margin-top: 10px;
+    
+}
+
+.follow {
+    padding: 5px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.edit-btn {
+    background: rgb(10, 195, 245);
+    float: right;
+    
+    border-radius: 20px;
+    
+    margin-top: 15px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: white;
+    
+}
+
+.show-ul01 a {
+    text-decoration: none;
+    color: white;
+}
+
+.profile-p {
+    word-break: break-all;
+    
+}
+
+.profile-a {
+    margin-top: 15px;
+}
+
+.followers {
+    
+    margin-left: 25px;
+    color: rgb(150, 150, 150);
+}
+
+.following {
+    margin-left: 25px;
+    color: rgb(150, 150, 150);
+}
+
+.following-count {
+    font-weight: 800;
+}
+
+.followers-count {
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.show-ul02 {
+    position: absolute;
+    right:0;
+    bottom:0;
+    
+}
+
+.show-ul02 li {
+    float: left;
+    font-weight: 600;
+    margin-right: 65px;
+    margin-bottom:20px;
+    color: rgb(150, 150, 150);
+}
+
+
+.pinned-tweet-frame {
+    border: solid 1px rgb(222, 222, 222);
+    border-top: none;
+    min-height: 250px;
+    float:left;
+    width: 100%;
+}
+
+.pinned-tweet-frame img {
+    float: left;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.pinned {
+    
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(150, 150, 150);
+    
+    
+    margin-left: 70px;
+}
+
+.pinned-tweet-frame h3 {
+    margin-top: 18px;
+    margin-left:70px;
+}
+
+
+
+.pinned-tweet-frame p {
+    word-break: break-all;
+    white-space: pre-wrap;
+    margin-left: 70px;
+    margin-top: 5px;
+}
+
+
+
+
+//create
+
+.create-frame {
+    position: absolute;
+    width: 400px;
+    min-height: 350px;
+    top: 100px;
+    left: 100px;
+    border-radius: 5px;
+    border: solid 5px rgb(222, 222, 222);
+    background: rgb(245, 245, 5);
+    display: none;
+    
+}
+
+.create-form {
+    height: 50px;
+    border-bottom: solid 1px rgb(222, 222, 222);
+    
+}
+
+.create-form h2 {
+    text-align: center;
+    letter-spacing: 40px;
+    line-height: 60px;
+    color:rgb(160, 160, 160)
+}
+
+.signup {
+    height: 30px;
+    margin-top: 5px;
+    width: 100%;
+    border: solid 1px rgb(222, 222, 222);
+    border-right: none;
+    border-left: none;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.create-form p {
+    margin-top: 10px;
+    color:rgb(160, 160, 160);
+    font-size: 14px;
+}
+
+.signup-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: solid 3px rgb(222, 222, 222);
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    top:270px;
+    left:150px;
+    
+}
+
+
+
+
+
+//edit
+
+.user-edit-frame {
+    position: absolute;
+    width: 400px;
+    
+    height: 600px;
+    top: 100px;
+    left: 100px;
+    border-radius: 5px;
+    border: solid 5px rgb(222, 222, 222);
+    background: rgb(245, 245, 5);
+    
+    
+}
+
+.user-edit-form {
+    height: 50px;
+    border-bottom: solid 1px rgb(222, 222, 222);
+    
+}
+
+.user-edit-form h2 {
+    text-align: center;
+    letter-spacing: 40px;
+    line-height: 60px;
+    color:rgb(160, 160, 160)
+}
+
+.edit-user {
+    height: 30px;
+    margin-top: 5px;
+    width: 100%;
+    border: solid 1px rgb(222, 222, 222);
+    border-right: none;
+    border-left: none;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.user-edit-form p {
+    margin-top: 10px;
+    color:rgb(160, 160, 160);
+    font-size: 14px;
+}
+
+.update-user-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: solid 3px rgb(222, 222, 222);
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    top:520px;
+    left:150px;   
+}
+
+
+
+.pinned-tweet {
+    width: 100%;
+    height: 80px;
+    letter-spacing: 5px;
+    font-size: 16px;
+    border: solid 1px rgb(222, 222, 222);
+    outline: none;
+    white-space: pre-wrap;
+    word-break: break-all ;
+}
+
+
+
+
+//index
+
+.user-index-frame {
+    border: solid 1px rgb(222, 222, 222);
+    border-top: none;
+    border-bottom: none;
+    min-height: 100px;
+}
+
+.user-index-frame:hover {
+    background: rgb(250, 250, 250);
+}
+   
+.user-index-frame a {
+    color: black;
+    text-decoration: none;
+}
+
+.user-index-frame a:hover {
+    border-bottom: solid 1px black;
+    background: blue;
+}
+
+.user-index-frame img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    float: left;
+}
+
+.user-index-frame h4 {
+    margin-left: 70px;
+
+    
+}
+
+.user-index-frame p {
+    
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+
+
+//login
+
+.login-frame {
+    position: absolute;
+    width: 400px;
+    min-height: 300px;
+    top: 100px;
+    left: 100px;
+    border-radius: 5px;
+    border: solid 5px rgb(222, 222, 222);
+    background: rgb(245, 245, 5);
+    
+    
+}
+
+.login-form {
+    height: 50px;
+    border-bottom: solid 1px rgb(222, 222, 222);
+    
+}
+
+.login-form h2 {
+    text-align: center;
+    letter-spacing: 40px;
+    line-height: 60px;
+    color:rgb(160, 160, 160)
+}
+
+.login {
+    height: 30px;
+    margin-top: 5px;
+    width: 100%;
+    border: solid 1px rgb(222, 222, 222);
+    border-right: none;
+    border-left: none;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.login-form p {
+    margin-top: 10px;
+    color:rgb(160, 160, 160);
+    font-size: 14px;
+}
+
+.login-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: solid 3px rgb(222, 222, 222);
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    top:220px;
+    left:150px;
+    
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+}
